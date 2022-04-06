@@ -6,6 +6,17 @@
   --gray: #757575;
   --hero-bg-color: #2f303a;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0px 0px 0px 0px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-text-color);
@@ -176,4 +187,9 @@ body {
 }
 .page-nav {
   display: flex;
+}
+.container {
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
 }
