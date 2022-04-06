@@ -24,6 +24,10 @@ body {
   color: var(--secondary-color);
 }
 .nav-list {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -148,4 +152,28 @@ body {
 }
 .portfolio-card-link {
   text-decoration: none;
+}
+.all-lists-nav {
+  display: flex;
+  list-style-type: none;
+  font-style: normal;
+  /* background-color: tomato; */
+}
+
+.all-lists-nav .item + .item {
+  margin-left: 50px;
+}
+/* .all-lists-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+.all-lists-contact {
+  display: flex;
+  list-style-type: none;
+  font-style: normal;
+}
+.all-lists-contact .item + .item {
+  margin-left: 50px;
+}
+.page-nav {
+  display: flex;
 }
