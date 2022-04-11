@@ -5,17 +5,21 @@
   --button-bg-color: #f5f4fa;
   --gray: #757575;
   --hero-bg-color: #2f303a;
+  --team-bg-color: #F5F4FA;
 }
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
+h6 {
+  margin: 0;}
+
 ul {
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 0;
+  padding: 0;
+
 }
 
 body {
@@ -74,11 +78,18 @@ body {
 .contact-list:focus {
   color: var(--secondary-color);
 }
+.hero-section{
+  background-color: var(--hero-bg-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+}
 .hero-text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
@@ -95,6 +106,18 @@ body {
   letter-spacing: 0.06em;
   color: var(--white);
   cursor: pointer;
+  text-shadow: 
+  -1px 0 black,
+  0 1px black,
+  1px 0 black,
+  0 -1px black;
+
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 32px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  max-height: 50px;
 }
 .all-lists {
   list-style-type: none;
@@ -128,6 +151,11 @@ body {
   line-height: 1.16;
   text-align: center;
   color: var(--main-text-color);
+  /* background-color: tomato; */
+}
+.team {
+  background-color: var(--team-bg-color);
+  margin-top: 94px;
 }
 .team-member-name {
   font-weight: 500;
@@ -135,6 +163,8 @@ body {
   line-height: 1.18;
   text-align: center;
   color: var(--main-text-color);
+
+  
 }
 .team-member-position {
   font-size: 16px;
@@ -142,6 +172,7 @@ body {
   text-align: center;
   color: var(--gray);
 }
+
 .adds {
   font-style: normal;
   font-size: 14px;
@@ -235,13 +266,13 @@ body {
 }
 .features {
   display: flex;
-  flex-wrap: wrap;
+  margin-top: 50px;
   background-color: tomato;
 }
 
 .features .item {
-  width: 270px;
-  margin-left: 30px;
+  width: 370px;
+  margin-right: 30px;
 }
 
 .features .item:nth-child(3n) {
