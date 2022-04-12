@@ -12,7 +12,6 @@
 <body>
     <!-- Header -->
     <header class="container page-header">
-        <!-- Navigation -->
         
         <nav class="site-navigaton">
             <div class="page-nav">
@@ -20,8 +19,8 @@
             <a class="logo" href="index.html" ><span class="particle-web">Web</span>Studio</a>
             
             <ul class="all-lists-nav">
-                <li class="item"><a class="nav-list" href="index.html">Студия</a></li>
-                <li class="item"><a class="nav-list" href="portfolio.html">Портфолио</a></li>
+                <li class="item"><a class="nav-list accent" href="./index.html">Студия</a></li>
+                <li class="item"><a class="nav-list" href="./portfolio.html">Портфолио</a></li>
                 <li class="item"><a class="nav-list" href="">Контакты</a></li>
             </ul>
         </nav>
@@ -34,14 +33,16 @@
     </header>
     <!-- Main content -->
     <main>
-        <div class="container">
         <!-- Hero section -->
         <section class="hero-section">
+            <div class="container">
             <h1 class="hero-text">Эффективные решения <br>для вашего бизнеса</h1>
             <button class="hero-button" type="button">Заказать услугу</button>
+            </div>
         </section>
         <!-- Our advantages section -->
         <section class="benefits">
+            <div class="container">
             <h2 class="hiden-header">Наши преимущества</h2>
             <ul class="all-lists benefits-list">
                 <li class="item">
@@ -61,10 +62,11 @@
                     <p class="benefits-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
         <!-- What are we doing section -->
-        <section>
-            
+        <section class="features-section">
+            <div class="container">
             <h2 class="secondary-header">Чем мы занимаемся</h2>
 
             <ul class="all-lists features">
@@ -78,48 +80,57 @@
                     <img src="./images/working-on-tablet2.jpg" alt="Создаём дизайн" width="370" height="295">
                 </li>
             </ul>
-            
+            </div>
         </section>
         <!-- Our team section -->
         <section class="team">
-            <h2 class="secondary-header">Наша команда</h2>
+            <div class="container">
+            <h2 class="secondary-header team-header">Наша команда</h2>
 
-            <ul class="all-lists">
-                <li>
+            <ul class="all-lists team-list">
+                <li class="team-item">
                     <img src="./images/igor-demiyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                    <div class="team-card">
                     <h3 class="team-member-name">Игорь Демьяненко</h3>
                     <p class="team-member-position">Product Designer</p>
+                    </div>
                 </li>
-                <li>
+                <li class="team-item">
                     <img src="./images/olga-repina.jpg" alt="Ольга Репина" width="270" height="260">
+                    <div class="team-card">
                     <h3 class="team-member-name">Ольга Репина</h3>
                     <p class="team-member-position">Frontend Developer</p>
+                    </div>
                 </li>
-                <li>
+                <li class="team-item">
                     <img src="./images/nikita-tarasov.jpg" alt="Николай Тарасов" width="270" height="260">
+                    <div class="team-card">
                     <h3 class="team-member-name">Николай Тарасов</h3>
                     <p class="team-member-position">Marketing</p>
+                    </div>
                 </li>
-                <li>
+                <li class="team-item">
                     <img src="./images/mihail-ermakov.jpg" alt="Михаил Ермаков" width="270" height="260">
+                    <div class="team-card">
                     <h3 class="team-member-name">Михаил Ермаков</h3>
                     <p class="team-member-position">UI Designer</p>
+                    </div>
                 </li>
             </ul>
+            </div>
         </section>
-        </div>
+        
     </main>
     <!-- Footer -->
-    <footer class="container">
-        <!-- Logo -->
-        <a href="index.html" class="logo"><span class="particle-web">Web</span>Studio</a>
-        <!-- Address -->
+    <footer class="footer">
+        <div class="container">
+        <a href="index.html" class="logo logo-footer"><span class="particle-web">Web</span>Studio</a>
         <address>
-            <ul class="all-lists">
-                <li><a href="https://goo.gl/maps/fxkEnHUCGzXbZ7778" class="adds">г. Киев, пр-т Леси Украинки, 26 </a></li>
-                <!-- Contacts -->
-                <li><a class="contact-list" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
-                <li><a class="contact-list" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <ul class="all-lists footer-list">
+                <li class="item"><a class="adds footer-contact" href="https://goo.gl/maps/fxkEnHUCGzXbZ7778">г. Киев, пр-т Леси Украинки, 26 </a></li>
+                <li class="item"><a class="contact-list footer-contact" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
+                <li class="item"><a class="contact-list footer-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </div>
             </ul>
         </address>
     </footer>
