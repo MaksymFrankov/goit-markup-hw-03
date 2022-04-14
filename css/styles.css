@@ -127,11 +127,11 @@ body {
   color: var(--white);
   cursor: pointer;
   text-shadow: 
-  -1px 0 black,
-  0 1px black,
-  1px 0 black,
-  0 -1px black;
-  border: 1px solid #000000;
+  -1px 0 var(--main-text-color),
+  0 1px var(--main-text-color),
+  1px 0 var(--main-text-color),
+  0 -1px var(--main-text-color);
+  border: 1px solid var(--main-text-color);
 
   margin-top: 30px;
   display: inline-block;
@@ -144,15 +144,20 @@ body {
   font-style: normal;
 }
 /* ------------------Benefits------------------ */
-.benefits-header {
-  margin-bottom: 10px;
+.benefits {
+  padding-top: 94px;
+  /* padding-bottom: 94px; */
+}
 
+.benefits-header {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-text-color);
   /* background-color: teal; */
+
+  margin-bottom: 10px;
 }
 .benefits-text {
   /* background-color: green; */
@@ -161,10 +166,6 @@ body {
   color: var(--gray);
 }
 
-.benefits {
-  padding-top: 94px;
-  /* padding-bottom: 94px; */
-}
 .secondary-header {
   font-weight: 700;
   font-size: 36px;
@@ -233,13 +234,6 @@ body {
   display: flex;
 }
 
-.container {
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
@@ -308,17 +302,51 @@ padding: 0;
   text-align: center;
   color: var(--main-text-color);
   cursor: pointer;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
 }
 
 .filter:hover,
 .filter:focus {
   background: var(--secondary-color);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   color: var(--white);
+  -webkit-box-shadow: 0 8px 6px -6px var(--gray);
+  -moz-box-shadow: 0 8px 6px -6px var(--gray);
+  box-shadow: 0 8px 6px -6px var(--gray);
+
+  cursor: pointer;
+  border: none;
+}
+.filter-list{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.work-about {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+  margin-top: -5px;
+}
+.filter-list .item:not(:first-child){
+  margin-left: 8px;
+}
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.work-list .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .portfolio-card-header {
