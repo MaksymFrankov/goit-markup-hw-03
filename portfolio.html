@@ -13,26 +13,30 @@
 
 <body>
     <!-- Header -->
-    <header class="page-header">
-        <!-- Navigation -->
+    <header class="container page-header">
+    
         <nav class="site-navigaton">
-            <!-- Logo -->
-            <a href="index.html" class="logo"><span class="particle-web">Web</span>Studio</a>
-            <ul class="all-lists">
-                <li><a class="nav-list" class="nav-list" href="./index.html">Студия</a></li>
-                <li><a class="nav-list accent" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="nav-list" href="">Контакты</a></li>
-            </ul>
+            <div class="page-nav">
+    
+                <a class="logo" href="index.html"><span class="particle-web">Web</span>Studio</a>
+    
+                <ul class="all-lists-nav">
+                    <li class="item"><a class="nav-list" href="./index.html">Студия</a></li>
+                    <li class="item"><a class="nav-list accent" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="nav-list" href="">Контакты</a></li>
+                </ul>
         </nav>
-        <!-- Contacts -->
-        <ul class="all-lists">
-            <li><a class="contact-list" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
-            <li><a class="contact-list" href="tel:+380961111111">+38 096 111 11 11</a></li>
+    
+        <ul class="all-lists-contact">
+            <li class="item"><a class="contact-list" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
+            <li class="item"><a class="contact-list" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
     <!-- Page navigation -->
     <main>
         <section>
+            <div class="container">
             <h1 class="hiden-header">Портфолио</h1>
             <ul class="all-lists">
             <li><button type="button" class="filter">Все</button>
@@ -107,20 +111,23 @@
             </li>
 
         </ul>
+        </div>
     </section>
     </main>
     <!-- Footer -->
-    <footer>
-        <!-- Logo -->
-        <a href="index.html" class="logo"><span class="particle-web">Web</span>Studio</a>
-        <!-- Address -->
-        <address>
-            <ul class="all-lists">
-                <li><a href="https://goo.gl/maps/fxkEnHUCGzXbZ7778" class="adds">г. Киев, пр-т Леси Украинки, 26 </a></li>
-                <!-- Contacts -->
-                <li><a class="contact-list" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
-                <li><a class="contact-list" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+    <footer class="footer">
+        <div class="container">
+            <a href="index.html" class="logo logo-footer"><span class="particle-web">Web</span>Studio</a>
+            <address>
+                <ul class="all-lists footer-list">
+                    <li class="item"><a class="adds footer-contact" href="https://goo.gl/maps/fxkEnHUCGzXbZ7778">г. Киев,
+                            пр-т Леси Украинки, 26 </a></li>
+                    <li class="item"><a class="contact-list footer-contact" href="mailto:info@devstudio.com">
+                            info@devstudio.com</a></li>
+                    <li class="item"><a class="contact-list footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+        </div>
+        </ul>
         </address>
     </footer>
 </body>

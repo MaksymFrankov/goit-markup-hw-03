@@ -27,6 +27,9 @@ body {
   color: var(--main-text-color);
   letter-spacing: 0.03em;
 }
+.hiden-header {
+  display: none;
+}
 /* -----------------Header----------------- */
 .logo {
   display: flex;
@@ -79,7 +82,22 @@ body {
 .accent{
   color: var(--secondary-color);
 }
+.page-nav {
+  display: flex;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+}
 /* ----------------------------Main---------------------------- */
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .hero-section{
   background-color: var(--hero-bg-color);
   text-align: center;
@@ -102,7 +120,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+ 
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -113,11 +131,11 @@ body {
   0 1px black,
   1px 0 black,
   0 -1px black;
+  border: 1px solid #000000;
 
   margin-top: 30px;
   display: inline-block;
   padding: 10px 32px;
-  border: 1px solid #000000;
   border-radius: 4px;
   max-height: 50px;
 }
@@ -125,6 +143,7 @@ body {
   list-style-type: none;
   font-style: normal;
 }
+/* ------------------Benefits------------------ */
 .benefits-header {
   margin-bottom: 10px;
 
@@ -141,9 +160,7 @@ body {
   line-height: 1.7;
   color: var(--gray);
 }
-.hiden-header {
-  display: none;
-}
+
 .benefits {
   padding-top: 94px;
   /* padding-bottom: 94px; */
@@ -199,48 +216,6 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-
-.filter {
-  background: var(--button-bg-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  color: var(--main-text-color);
-  cursor: pointer;
-}
-.filter:hover,
-.filter:focus {
-  background: var(--secondary-color);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  color: var(--white);
-}
-.portfolio-card-header {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--main-text-color);
-}
-.portfolio-card-text {
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--gray);
-}
-.portfolio-card-link {
-  text-decoration: none;
-}
-.all-lists-nav {
-  display: flex;
-  list-style-type: none;
-  font-style: normal;
-  /* background-color: tomato; */
-}
-
 .all-lists-nav .item + .item {
   margin-left: 50px;
 }
@@ -257,13 +232,7 @@ body {
   margin-left: 50px;
   display: flex;
 }
-.page-nav {
-  display: flex;
-}
-.page-header {
-  display: flex;
-  align-items: center;
-}
+
 .container {
   width: 1200px;
   margin-right: auto;
@@ -329,4 +298,50 @@ padding: 0;
 }
 .footer-list .item:not(:first-child){
   margin-top: 9px;
+}
+/* -------------------- Portfolio -------------------- */
+.filter {
+  background: var(--button-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.filter:hover,
+.filter:focus {
+  background: var(--secondary-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--white);
+}
+
+.portfolio-card-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+
+.portfolio-card-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--gray);
+}
+
+.portfolio-card-link {
+  text-decoration: none;
+}
+
+.all-lists-nav {
+  display: flex;
+  list-style-type: none;
+  font-style: normal;
+  /* background-color: tomato; */
 }
