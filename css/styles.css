@@ -6,6 +6,7 @@
   --gray: #757575;
   --hero-bg-color: #2f303a;
   --team-bg-color: #F5F4FA;
+  --header-border :#ECECEC;
 }
 p,
 h1,
@@ -28,8 +29,14 @@ body {
   letter-spacing: 0.03em;
 }
 .hiden-header {
-  display: none;
-}
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
 /* -----------------Header----------------- */
 .logo {
   display: flex;
@@ -89,6 +96,7 @@ body {
 .page-header {
   display: flex;
   align-items: center;
+  border-bottom: var(--header-border) 1px solid;
 }
 /* ----------------------------Main---------------------------- */
 .container {
@@ -97,6 +105,10 @@ body {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+.section{
+padding-top: 94px;
+padding-bottom: 94px;
 }
 .hero-section{
   background-color: var(--hero-bg-color);
@@ -144,11 +156,6 @@ body {
   font-style: normal;
 }
 /* ------------------Benefits------------------ */
-.benefits {
-  padding-top: 94px;
-  /* padding-bottom: 94px; */
-}
-
 .benefits-header {
   font-weight: 700;
   font-size: 14px;
@@ -233,7 +240,9 @@ body {
   margin-left: 50px;
   display: flex;
 }
-
+.benefits{
+padding-bottom: 0px;
+}
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
@@ -245,10 +254,6 @@ body {
 }
 .benefits-list .item:nth-child(4n) {
   margin-right: 0px;
-}
-.features-section{
-padding-top: 94px;
-padding-bottom: 94px;
 }
 .features {
   display: flex;
@@ -273,8 +278,9 @@ padding-bottom: 94px;
 }
 .logo-footer{
   color: var(--white);
+  margin: 0px;
 }
-.footer-list{
+.address{
   margin-top: 20px;
 }
 .adds {
@@ -362,6 +368,7 @@ padding: 0;
   font-size: 16px;
   line-height: 1.87;
   color: var(--gray);
+  margin-top: 4px;
 }
 
 .portfolio-card-link {
@@ -374,8 +381,3 @@ padding: 0;
   font-style: normal;
   /* background-color: tomato; */
 }
-.portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-/*  Применись! */
